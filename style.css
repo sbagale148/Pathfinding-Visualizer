@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.controls {
+    margin: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px);
+    margin: 20px auto;
+    border: 2px solid black; /* Added border for visibility */
+}
+
+.grid div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: background-color 0.3s;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.grid div.start {
+    background-color: green;
+}
+
+.grid div.end {
+    background-color: red;
+}
+
+.grid div.obstacle {
+    background-color: black;
+}
+
+.grid div.path {
+    background-color: yellow;
+}
